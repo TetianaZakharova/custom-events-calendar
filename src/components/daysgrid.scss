@@ -1,0 +1,71 @@
+.calendar-grid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(7, 100px);
+    grid-template-rows: repeat(6, 100px);
+    font-size: 12px;
+    border: 1px solid grey;
+    box-sizing: border-box;
+
+
+    :hover {
+        cursor: pointer;
+        background-color: #f3f3f3;
+        transition: .3s linear;
+    }
+
+    .day-cell {
+        border: 1px solid grey;
+        display: flex;
+        flex-direction: column;
+        padding: 3px;
+
+        .day-data {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        p {
+            margin: 0;
+        }
+
+    }
+
+    .current-month {
+        font-weight: 500;
+    }
+
+    .other-month {
+        color: gray;
+    }
+
+    .selected-day {
+        color: #d91821;
+        font-weight: bold;
+        background-color: #cff3ffbd;
+    }
+
+    .event-list {
+        list-style-type: none;
+        margin: 6px 0 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        background-color: #c6c5c5;
+
+        li {
+            // display: flex;    
+            // justify-content: flex-start; 
+            text-align: left;
+            font-size: 11px;
+            width: 100%;
+            border: 1px solid rgb(67, 157, 157);
+            border-radius: 4px;
+            color: white;     
+            background-color: rgb(67, 157, 157)
+        }
+    }
+}

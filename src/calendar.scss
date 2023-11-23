@@ -1,0 +1,39 @@
+.main-container {
+    // position: relative;
+    width: 702px;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+    .date-filter {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        // align-items: flex-start;
+        position: relative;
+
+        &__year {
+            justify-content: center;
+        }
+
+        .open-form {
+            margin-right: auto;
+            cursor: pointer;
+        }
+
+        .current-month {
+            width: 120px;
+        }
+
+        .filter-control {
+            width: 40px;
+
+            cursor: pointer;
+        }
+    }
+
+    .datepicker-wrap {
+        margin-left: 18px;
+        cursor: pointer;
+    }
+
+}

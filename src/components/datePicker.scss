@@ -1,0 +1,10 @@
+.month-cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+.selected-month {
+    background-color: #2c7ee3;
+    color: white;
+}
